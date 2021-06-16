@@ -82,8 +82,8 @@
 	.upper-beak{
 		top: 60%;
     	left: 40%;
-		background: orange;
-		width: 20%;
+			background: orange;
+			width: 20%;
 	    height: 10%;
 	    border-radius: 50%;
 	}
@@ -126,30 +126,28 @@
 		width: 30%;
 		height: 60%;
 		border-radius: 30% 30% 120% 30%;
-		left: 21%;
-		top: -1%;
+		left: 19%;
+		top: -3%;
 		z-index: -1;
 		transform: rotate(45deg);
-
+	  animation-name: wave;
 		animation-duration: 3s;
-	    animation-name: wave;
-	    animation-iteration-count: infinite;
-	    transform-origin:0% 0%;
-	    animation-timing-function: linear;
+		transform-origin:0% 0%;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: linear;
 	}
-
   @keyframes wave {
-      10% {
-        transform: rotate(110deg);
+      40%{
+      	transform: rotate(100deg);
       }
-      20% {
-        transform: rotate(120deg);
+      50%{
+      	transform: rotate(110deg);
       }
-      30% {
-        transform: rotate(110deg);
+      60%{
+      	transform: rotate(100deg);
       }
-      40% {
-        transform: rotate(130deg);
+      70%{
+      	transform: rotate(110deg);
       }
     }
 	.right-leg{
