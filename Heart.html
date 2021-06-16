@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart</title>
+	<style>
+		.heart{
+			background: pink;
+			height: 100px;
+			width: 100px;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transform: rotate(-135deg);
+
+		}
+		.heart::before{
+			background: pink;
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			border-radius: 50%;
+			content: "";
+			top: 45px;
+			left: 0;
+		}
+		.heart::after{
+			background: pink;
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			border-radius: 50%;
+			content: "";
+			top: 0;
+			left: 45px;
+		}
+	</style>
+</head>
+<body>
+	<div class="heart"></div>
+</body>
+</html>
