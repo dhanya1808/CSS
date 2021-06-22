@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>COVID-19 vaccine acceptance</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+		body {
+		  font-family: 'Poppins', sans-serif;
+		  font-size: 1rem;
+		  font-weight: 400;
+		  line-height: 1.4;
+		  margin: 0;
+		  background:#ffcccb;
+		}
+		h1 {
+		  padding-top:50px;
+		  font-weight: 400;
+		  line-height: 1.2;
+		}
+		p {
+		  font-size: 1.125rem;
+		}
+
+		h1,
+		p {
+		  margin-top: 0;
+		  margin-bottom: 0.5rem;
+		}
+		label {
+		  display: flex;
+		  align-items: center;
+		  font-size: 1.125rem;
+		  margin-bottom: 0.5rem;
+		}
+		input,
+		button,
+		select,
+		textarea {
+		  margin: 0;
+		  font-family: inherit;
+		  font-size: inherit;
+		  line-height: inherit;
+		}
+
+		.main {
+		  width: 100%;
+		  margin: 0 auto;
+		}
+
+		@media (min-width: 576px) {
+		  .main {
+		    max-width: 540px;
+		  }
+		}
+
+		@media (min-width: 768px) {
+		  .main {
+		    max-width: 720px;
+		  }
+		}
+
+		.header {
+		  padding: 0 0.625rem;
+		  margin-bottom: 1.875rem;
+		}
+		.text-center {
+		  text-align: center;
+		}
+		form {
+		  border:2px solid;
+		  border-radius: 1rem;
+		  background:white;
+		  margin-bottom:50px;
+		}
+
+		@media (min-width: 480px) {
+		  form {
+		    padding: 2.5rem;
+		  }
+		}
+
+		.form-group {
+		  margin: 0 auto 1.25rem auto;
+		  padding: 0.25rem;
+		}
+		.form-control {
+		  display: block;
+		  width: 100%;
+		  height: 2.375rem;
+		  padding: 0.375rem 0.75rem;
+		  color: #495057;
+		  background-color: #fff;
+		  background-clip: padding-box;
+		  border: 1px solid #ced4da;
+		  border-radius: 0.25rem;
+		  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+		}
+		.form-control:focus {
+		  border-color: #80bdff;
+		  outline: 0;
+		  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+		}
+		.input-radio,
+		.input-checkbox {
+		  display: inline-block;
+		  margin-right: 0.625rem;
+		  min-height: 1.25rem;
+		  min-width: 1.25rem;
+		}
+		textarea {
+		  min-height: 120px;
+		  width: 100%;
+		  resize: vertical;
+		}
+		button {
+		  display: block;
+		  border:none;
+		  width: 100%;
+		  padding: 0.75rem;
+		  border-radius: 2px;
+		  background-color:#FF7F7F;
+		  cursor: pointer;
+		}
+		button:hover{
+		  border:2px solid;
+		  border-color:#81000;
+		}
+		ol{
+		  padding:4%;
+		}
+
+	</style>
+</head>
+<body>
+	<main class="main">
+   <header class="header">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description">Your opinion matters!! We would love to know your thoughts about the COVID-19 vaccine and would appreciate it if you could submit your feedback via this form.</p>
+   </header>
+   <form id="survey-form">
+     <ol>
+       <li>
+     <div class="form-group">
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+       </li>
+       <li>
+      <div class="form-group">
+      <label for="email" id="email-label">E-mail:</label>
+      <input id="email" type="email" placeholder="E-mail" required>
+      </div>
+</li>
+       <li>
+      <div class="form-group">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="10" max="100" placeholder="Age">
+      </div>
+       </li>
+<li>
+      <div class="form-group">
+      <p>What is your gender?</p>
+      <label>
+        <input type="radio" name="gender" value="male" class="input-radio">
+        Male</label>
+      <label>
+        <input type="radio" name="gender" value="female" class="input-radio">
+        Female</label>
+      <label><input type="radio" name="gender" value="others" class="input-radio">
+        Others (please specify)</label>
+        <input type="text" placeholder="Gender">
+      </div>
+       </li>
+       <li>
+      <div class="form-group">
+      <p>Do you plan to get a COVID-19 vaccine when one becomes available?</p>
+      <label><input type="radio" name="plan" value="yes" class="input-radio">
+      Yes</label>
+      <label><input type="radio" name="plan" value="no" class="input-radio">
+      No</label>
+      <label><input type="radio" name="plan" value="not sure" class="input-radio">
+      Not sure</label>
+      </div>
+       </li>
+       <li>
+      <div class="form-group">
+      <p>What concerns do you have, if any, about receiving a COVID-19 vaccine? (Please select all that apply)</p>
+        <label><input type="checkbox" value="option1" class="input-checkbox">I don’t plan to get a vaccine.</label>
+        <label><input type="checkbox" value="option2" class="input-checkbox">I’m worried that the COVID-19 vaccine isn’t safe.</label>
+        <label><input type="checkbox" value="option3" class="input-checkbox">I would rather take the risk of getting sick with COVID-19.</label>
+        <label><input type="checkbox" value="option4" class="input-checkbox">I’m worried the COVID-19 vaccine may be harmful or have side effects.</label>
+        <label><input type="checkbox" value="option5" class="input-checkbox">I’m worried there may be a cost associated with receiving the COVID-19 vaccine.</label>
+        <label><input type="checkbox" value="option6" class="input-checkbox">I have already had COVID-19 so I don’t believe a vaccine is necessary.</label>
+        <label><input type="checkbox" value="option7" class="input-checkbox">I don’t trust the distribution process of the COVID-19 vaccine.</label>
+
+        <label><input type="checkbox" value="option8" class="input-checkbox">I’m worried the COVID-19 vaccine won’t be distributed fairly.</label>
+        <label><input type="checkbox" value="option9" class="input-checkbox">I’m worried that the location of the COVID-19 vaccine providing centers will be far for me.</label>
+
+        <label><input type="checkbox" value="option10" class="input-checkbox">I’m concerned that I won’t have time to get the COVID-19 vaccine.</label>
+      </div>
+       </li>
+       <li>
+        <div class="form-group">
+          <label for="dropdown">Are you vaccinated for diseases other than COVID-19?</label>
+          <select id="dropdown" class="form-control">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+      </div>
+
+</li>
+  <li>
+      <div class="form-group">
+        <p>When considering the COVID-19 vaccination, do you believe you are in a high-risk category for COVID-19?</p>
+          <label><input type="radio" name="risk" value="yes" class="input-radio">Yes</label>
+          <label><input type="radio" name="risk" value="no" class="input-radio">No</label>
+          <label><input type="radio" name="risk" value="no response" class="input-radio">I'd rather not respond</label>
+      </div>
+       </li>
+       <li>
+      <div class="form-group">
+      <p>If you answered yes to the previous question, what are the health risks that you are concerned about? (Please select all that apply)</p>
+      <label><input type="checkbox" value="adult" class="input-checkbox">I am an older adult</label>
+
+      <label><input type="checkbox" value="immuno-compromised" class="input-checkbox">I am immuno-compromised</label>
+
+      <label><input type="checkbox" value="respiratory" class="input-checkbox">I have a respiratory illness (asthma, chronic obstructive pulmonary disease, etc.)</label>
+
+      <label><input type="checkbox" value="concern" class="input-checkbox">I have other conditions that are of concern</label>
+
+      <label><input type="checkbox" value="no risk" class="input-checkbox">I do not have any health risk concerns</label>
+
+      <label><input type="checkbox" value="others" class="input-checkbox">Other (please specify)</label>
+      <input type="text" placeholder="Reason for your concern">
+      </div>
+       </li>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+          <textarea placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+      <button type="submit" id="submit">Submit</button>
+      <div>
+
+    </form>
+</main>
+
+</body>
+</html>
